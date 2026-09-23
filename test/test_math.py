@@ -1,6 +1,7 @@
 import numpy as np
-import pytest
-from src.aider_test.math import multiply, add, subtract
+
+from src.aider_test.math import add, multiply, subtract
+
 
 def test_multiply_integers():
     assert multiply(2, 3) == 6
