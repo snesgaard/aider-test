@@ -14,8 +14,10 @@ Run test and lint after every change. Both must pass before you report done.
 - All functions must be type annotated.
 - All functions must have a docstring.
 - Use pytest for testing.
+- All functions must have a unit test.
 
 ## Never
 - Never modify tests to make them pass. Fix the code.
 - Never add a dependency without asking.
 - Never touch `.venv` or Makefile.
+- Never modify code that is unrelated to the current task.

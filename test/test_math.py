@@ -54,4 +54,9 @@ def test_fibonacci_array_negative():
     try:
         fibonacci(a)
     except ValueError as e:
-        assert str(e) == "All elements in the array must be non-negative integers"
+        assert str(e) == "n must be a non-negative integer"
+
+def test_fibonacci_array_single():
+    a = fibonacci(np.array([0]))
+    expected = np.array([0])
+    assert np.array_equal(a, expected)

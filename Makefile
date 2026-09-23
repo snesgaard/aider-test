@@ -1,5 +1,5 @@
 test:
-	uv run pytest test/
+	uv run pytest --cov=src/ --cov-fail-under=100 --cov-report=term-missing  --no-cov-on-fail test/
 
 lint:
 	uv run ruff check src/ test/
