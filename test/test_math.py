@@ -34,3 +34,24 @@ def test_fibonacci():
     assert fibonacci(4) == 3
     assert fibonacci(5) == 5
     assert fibonacci(10) == 55
+
+def test_fibonacci_zero():
+    assert fibonacci(0) == 0
+
+def test_fibonacci_negative():
+    try:
+        fibonacci(-1)
+    except ValueError as e:
+        assert str(e) == "n must be a non-negative integer"
+
+def test_fibonacci_array():
+    a = np.array([0, 1, 2, 3, 4, 5])
+    expected = np.array([0, 1, 1, 2, 3, 5])
+    assert np.array_equal(fibonacci(a), expected)
+
+def test_fibonacci_array_negative():
+    a = np.array([0, 1, -2, 3, 4, 5])
+    try:
+        fibonacci(a)
+    except ValueError as e:
+        assert str(e) == "All elements in the array must be non-negative integers"
