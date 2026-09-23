@@ -1,5 +1,4 @@
 import numpy as np
-import pytest
 from src.aider_test.math import multiply, add, subtract
 
 def test_multiply_integers():

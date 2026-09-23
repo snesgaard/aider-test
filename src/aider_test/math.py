@@ -1,19 +1,19 @@
-import numpy as np
 from typing import Union
+import numpy as np
 
-def multiply(a: Union[int, np.ndarray], b: Union[int, np.ndarray]) -> Union[int, np.ndarray]:
+def multiply(a: int | np.ndarray, b: int | np.ndarray) -> int | np.ndarray:
     """
     Multiplies two numbers or numpy arrays element-wise.
     """
     return a * b
 
-def add(a: Union[int, np.ndarray], b: Union[int, np.ndarray]) -> Union[int, np.ndarray]:
+def add(a: int | np.ndarray, b: int | np.ndarray) -> int | np.ndarray:
     """
     Adds two numbers or numpy arrays element-wise.
     """
     return a + b
 
-def subtract(a: Union[int, np.ndarray], b: Union[int, np.ndarray]) -> Union[int, np.ndarray]:
+def subtract(a: int | np.ndarray, b: int | np.ndarray) -> int | np.ndarray:
     """
     Subtracts two numbers or numpy arrays element-wise.
     """
