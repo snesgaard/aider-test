@@ -1,6 +1,6 @@
 import numpy as np
 
-from src.aider_test.math import add, multiply, subtract
+from aider_test.math import add, multiply, subtract
 
 
 def test_multiply_integers():
