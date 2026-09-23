@@ -1,0 +1,4 @@
+model: ollama_chat/qwen2.5-coder:14b
+openai-api-base: http://127.0.0.1:11434
+auto-commits: true
+dirty-commits: true

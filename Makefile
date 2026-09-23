@@ -9,4 +9,8 @@ ci: lint test
 sync:
 	uv sync
 
+aider:
+	OLLAMA_API_BASE=http://127.0.0.1:11434 aider
+
+
 .PHONY: sync lint test
