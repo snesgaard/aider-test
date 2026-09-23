@@ -19,7 +19,7 @@ def subtract(a: int | np.ndarray, b: int | np.ndarray) -> int | np.ndarray:
     """
     return a - b
 
-def fibonacci(n: int | np.ndarray) -> int | np.ndarray:
+def fibonacci(n: int | np.ndarray) -> np.ndarray:
     """
     Computes the n-th Fibonacci number or Fibonacci sequence for a numpy array of indices.
     """
@@ -41,6 +41,4 @@ def fibonacci(n: int | np.ndarray) -> int | np.ndarray:
                 a, b = b, a + b
             result[i] = b
     
-    if result.size == 1:
-        return result[0]
     return result
