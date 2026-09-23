@@ -29,16 +29,16 @@ def fibonacci(n: int | np.ndarray) -> np.ndarray:
     if not np.issubdtype(n.dtype, np.integer) or (n < 0).any():
         raise ValueError("n must be a non-negative integer")
     
-    result = np.zeros_like(n, dtype=int)
-    for i in range(n.size):
-        if n[i] == 0:
-            result[i] = 0
-        elif n[i] == 1:
-            result[i] = 1
+    def fib_single(x):
+        if x == 0:
+            return 0
+        elif x == 1:
+            return 1
         else:
             a, b = 0, 1
-            for _ in range(2, n[i] + 1):
+            for _ in range(2, x + 1):
                 a, b = b, a + b
-            result[i] = b
+            return b
     
+    result = np.vectorize(fib_single)(n)
     return result

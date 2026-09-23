@@ -60,3 +60,8 @@ def test_fibonacci_array_single():
     a = fibonacci(np.array([0]))
     expected = np.array([0])
     assert np.array_equal(a, expected)
+
+def test_fibonacci_multidimensional():
+    a = np.array([[1, 2, 3], [4, 5, 6]])
+    expected = np.array([[1, 1, 2], [3, 5, 8]])
+    assert np.array_equal(fibonacci(a), expected)
