@@ -13,6 +13,7 @@ Run test and lint after every change. Both must pass before you report done.
 ## Conventions
 - All functions must be type annotated.
 - All functions must have a docstring.
+- Use pytest for testing.
 
 ## Never
 - Never modify tests to make them pass. Fix the code.
