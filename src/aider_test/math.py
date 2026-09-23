@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def multiply(a: int | np.ndarray, b: int | np.ndarray) -> int | np.ndarray:
     """
     Multiplies two numbers or numpy arrays element-wise.

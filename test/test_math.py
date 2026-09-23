@@ -1,6 +1,6 @@
 import numpy as np
 
-from aider_test.math import add, multiply, subtract, fibonacci
+from aider_test.math import add, fibonacci, multiply, subtract
 
 
 def test_multiply_integers():
