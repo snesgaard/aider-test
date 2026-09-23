@@ -3,9 +3,9 @@ openai-api-base: http://127.0.0.1:11434
 auto-commits: true
 dirty-commits: true
 read: [AGENTS.md]
-test-cmd: uv run pytest
+test-cmd: uv run pytest 
 #lint: true
-lint-cmd: uv run ruff check
+lint-cmd: uv run ruff check --fix
 
 auto-lint: true
 auto-test: true
