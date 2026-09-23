@@ -27,7 +27,7 @@ def fibonacci(n: int | np.ndarray) -> int | np.ndarray:
         n = np.array([n])
     
     if not np.issubdtype(n.dtype, np.integer) or (n < 0).any():
-        raise ValueError("All elements in the array must be non-negative integers")
+        raise ValueError("n must be a non-negative integer")
     
     result = np.zeros_like(n, dtype=int)
     for i in range(n.size):
