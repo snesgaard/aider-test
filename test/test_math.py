@@ -1,6 +1,6 @@
 import numpy as np
 
-from aider_test.math import add, multiply, subtract
+from aider_test.math import add, multiply, subtract, fibonacci
 
 
 def test_multiply_integers():
@@ -26,3 +26,11 @@ def test_subtract_arrays():
     a = np.array([5, 7, 9])
     b = np.array([4, 5, 6])
     assert np.array_equal(subtract(a, b), np.array([1, 2, 3]))
+
+def test_fibonacci():
+    assert fibonacci(1) == 0
+    assert fibonacci(2) == 1
+    assert fibonacci(3) == 1
+    assert fibonacci(4) == 2
+    assert fibonacci(5) == 3
+    assert fibonacci(10) == 34
